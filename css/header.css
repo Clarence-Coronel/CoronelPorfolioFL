@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Stylish', sans-serif;
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(41, 40, 40) !important; */
+    background-repeat: no-repeat !important;
+    background-size: 100vw 100vh !important;
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    position: relative;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+/* header children start */
+.filter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 50%;
+}
+
+.fl-logo{
+    color: white;
+    z-index: 1;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 5vw;
+    
+}
+
+nav{
+    padding-right: 5vw;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+    align-items: center;
+    gap: 5vw;
+}
+
+/* header children stop */
+.button{
+    background-color: rgb(180, 35, 35);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    transition-duration: 0.5;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.dropdown-menu{
+    width: 100%;
+}
+
+
+.nav-links{
+    text-decoration: none;
+    color: white;
+    z-index: 1;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.dropdown-toggle[aria-expanded="true"]::after{
+    transform: rotate(180deg);
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #534f4f;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #272424;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #eb4c4c;
+}
