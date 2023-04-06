@@ -27,25 +27,31 @@ header{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
     
 }
 
 /* header children start */
-.filter{
+/* .filter{
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: black;
     opacity: 50%;
-}
+} */
 
 .fl-logo{
     color: white;
     z-index: 1;
     font-size: 3rem;
+    font-weight: 1000;
     font-family: 'Montserrat', sans-serif;
-    padding-left: 5vw;
-    
+    z-index: 1;
+}
+
+.fl-logo:hover{
+    cursor: pointer;
+    color: #eb4c4c;
 }
 
 nav{
@@ -109,4 +115,16 @@ a{
   /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #eb4c4c;
+}
+
+.dropdown-item{
+    text-align: center;
+}
+
+.dropdown-item:hover{
+    color: #eb4c4c;
+}
+
+.nav-links:hover{
+    color: #eb4c4c;
 }

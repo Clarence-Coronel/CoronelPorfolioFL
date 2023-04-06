@@ -16,12 +16,14 @@ footer{
     width: 250px;
 }
 
-.name{
-
+.name:hover{
+    color: #eb4c4c;
+    cursor: pointer;
 }
 
-.section{
-
+.section:hover{
+    color: #eb4c4c;
+    cursor: pointer;
 }
 
 .image{
@@ -29,6 +31,11 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.image:hover{
+    color: #eb4c4c;
+    cursor: pointer;
 }
 
 .text-image{
