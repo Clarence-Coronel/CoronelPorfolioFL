@@ -29,6 +29,7 @@
 .image-container:hover{
     width: 1500px;
     background-image: linear-gradient(to right, #a72e2ec4 , #000000);
+    cursor: pointer;
 }
 
 
@@ -61,7 +62,6 @@ main{
 .highlight{
     font-size: 2.5rem;
     color: rgb(56, 197, 197);
-    cursor: pointer;
     transition-duration: 0.5s;
 }
 

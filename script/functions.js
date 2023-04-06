@@ -14,6 +14,7 @@ imageContainer.addEventListener('mouseover', ()=>{
     console.log('Mouse is hovering Image Container');
     doAnim = false;
     imageContainer.style.width = '1500px';
+    imageContainer.style.border = 'unset'
     aboutText.style = 'display:flex';
 
     
@@ -32,10 +33,12 @@ setInterval(()=>{
         if(!isUpped){
             console.log('width has been set to 600px');
             imageContainer.style.width = '600px';
+            // imageContainer.style.border = '1px solid white'
             isUpped = true;
         }else{
             console.log('width has been set to 580px');
             imageContainer.style.width = '580px';
+            // imageContainer.style.border = '1px solid black'
             isUpped = false;
         }
     }
