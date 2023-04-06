@@ -6,9 +6,11 @@ const body = document.getElementsByTagName('body')[0];
 const imageContainer = document.querySelector(".image-container");
 const aboutText = document.querySelector(".text-container");
 const highlight = document.querySelectorAll(".highlight");
+const modalTrigger = document.getElementById('modal-trigger');
 body.style.backgroundImage = 'url(images/6.jpg)'
 
-
+generateModal('Note', 'Ma\'am Jho, my portfolio website is not mobile responsive and is best viewed in PC. Sorry for the inconvenience and thank you po!');
+modalTrigger.click();
 
 imageContainer.addEventListener('mouseover', ()=>{
     console.log('Mouse is hovering Image Container');
@@ -55,3 +57,11 @@ setInterval(()=>{
         }
     }
 }, 500);
+
+function generateModal(title, content){
+    let modalTitle = document.getElementById('modal-title');
+    let modalContent = document.getElementById('modal-content');
+
+    modalTitle.innerHTML = title;
+    modalContent.innerHTML = content;
+}

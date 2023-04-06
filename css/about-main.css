@@ -43,7 +43,7 @@ main{
 
 .text-container{
     width: 1500px !important;
-    height: 80%;
+    height: 100%;
     animation-duration: 0.1s;
     display: none;
     flex-flow: column;
@@ -53,10 +53,11 @@ main{
 }
 
 .text-container p{
-
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
+    padding: 1vw 3vw;
+    width: 100%;
 }
 
 .highlight{
@@ -67,4 +68,13 @@ main{
 
 .highlight:hover{
     color: pink;
+}
+
+.modal-header{
+    font-size: 2rem !important;
+}
+
+.modal-content{
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif !important;
 }
