@@ -8,11 +8,14 @@ const aboutText = document.querySelector(".text-container");
 const highlight = document.querySelectorAll(".highlight");
 const modalTrigger = document.getElementById('modal-trigger');
 
-generateModal('Note', 'Ma\'am Jho, my portfolio website is not mobile responsive and is best viewed in PC. Sorry for the inconvenience and thank you po!');
+if(window.innerWidth <= 500){
+    generateModal('Note', 'Ma\'am Jho, my portfolio website is not mobile responsive and is best viewed in PC. Sorry for the inconvenience and thank you po!');
+    modalTrigger.click();
+}
+
 
 // generateModal('Warning', 'Website still in development!');
 
-modalTrigger.click();
 
 imageContainer.addEventListener('mouseover', ()=>{
     doAnim = false;
