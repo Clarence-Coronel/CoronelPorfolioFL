@@ -15,6 +15,8 @@ imageContainer.addEventListener('mouseover', ()=>{
     doAnim = false;
     imageContainer.style.width = '1500px';
     aboutText.style = 'display:flex';
+
+    
 })
 
 imageContainer.addEventListener('mouseout', ()=>{
