@@ -8,6 +8,7 @@ const aboutText = document.querySelector(".text-container");
 const highlight = document.querySelectorAll(".highlight");
 const modalTrigger = document.getElementById('modal-trigger');
 
+alert(window.innerWidth);
 if(window.innerWidth <= 500){
     generateModal('Note', 'Ma\'am Jho, my portfolio website is not mobile responsive and is best viewed in PC. Sorry for the inconvenience and thank you po!');
     modalTrigger.click();
