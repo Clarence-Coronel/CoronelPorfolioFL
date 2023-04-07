@@ -9,7 +9,7 @@ const highlight = document.querySelectorAll(".highlight");
 const modalTrigger = document.getElementById('modal-trigger');
 
 alert(window.innerWidth);
-if(window.innerWidth <= 500){
+if(window.innerWidth <= 1200){
     generateModal('Note', 'Ma\'am Jho, my portfolio website is not mobile responsive and is best viewed in PC. Sorry for the inconvenience and thank you po!');
     modalTrigger.click();
 }
@@ -20,7 +20,7 @@ if(window.innerWidth <= 500){
 
 imageContainer.addEventListener('mouseover', ()=>{
     doAnim = false;
-    imageContainer.style.width = '1500px';
+    imageContainer.style.width = '90vw';
     imageContainer.style.border = 'unset'
     aboutText.style = 'display:flex';
 

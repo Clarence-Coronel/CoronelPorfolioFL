@@ -4,7 +4,7 @@ footer{
     margin-top: -10px;
     height: 150px;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     align-items: center;
     padding: 1vw;
 }
@@ -14,11 +14,18 @@ footer{
     color: white;
     font-size: 2rem;
     width: 250px;
+    flex: 1 1 0;
+    text-align: center;
 }
 
 .name:hover{
     color: #eb4c4c;
     cursor: pointer;
+}
+
+
+.section{
+    flex: 2 1 0;
 }
 
 .section:hover{
@@ -41,4 +48,18 @@ footer{
 .text-image{
     font-size: 1rem;
     margin: 0.5rem;
+}
+
+@media only screen and (max-width: 1300px){
+    .name, .section, .image{
+        font-size: 1.5rem !important;
+    }
+
+    .text-image{
+        font-size:  1rem !important;
+    }
+
+    .tools{
+        width: 100px;
+    }
 }

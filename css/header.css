@@ -22,13 +22,6 @@ body{
     height: fit-content;
 }
 
-@media only screen and (max-width: 360px){
-    body{
-        font-size: 0.5rem;
-        background-image: unset;
-    }
-}
-
 
 header{
     display: flex;
@@ -39,8 +32,17 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 1vw;
-    
+    padding: 1vw 2vw;
+}
+
+@media only screen and (max-width: 1300px){
+    .fl-logo{
+        font-size: 2rem !important;
+    }
+
+    .nav-links{
+        font-size: 1rem !important;
+    }
 }
 
 /* header children start */
