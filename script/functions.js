@@ -6,9 +6,9 @@ const body = document.getElementsByTagName('body')[0];
 const imageContainer = document.querySelector(".image-container");
 const aboutText = document.querySelector(".text-container");
 const highlight = document.querySelectorAll(".highlight");
+const p = document.querySelector('.text-container p');
 const modalTrigger = document.getElementById('modal-trigger');
 
-alert(window.innerWidth);
 if(window.innerWidth <= 1100){
     generateModal('Note', 'Ma\'am Jho, my portfolio website is not mobile responsive and is best viewed in PC. Sorry for the inconvenience and thank you po!');
     modalTrigger.click();
@@ -26,6 +26,10 @@ imageContainer.addEventListener('mouseover', ()=>{
 
     
 })
+
+setInterval(()=>{
+    
+},6000)
 
 imageContainer.addEventListener('mouseout', ()=>{
     doAnim = true;
@@ -49,12 +53,12 @@ setInterval(()=>{
 
     if(!isChangeColor){
         for(i = 0; i < highlight.length; i++){
-            highlight[i].style.color = 'pink'
+            highlight[i].style.color = 'lightpink'
             isChangeColor = true;
         }
     }else{
         for(i = 0; i < highlight.length; i++){
-            highlight[i].style.color = 'rgb(56, 129, 197)'
+            highlight[i].style.color = 'skyblue'
             isChangeColor = false;
         }
     }
