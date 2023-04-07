@@ -13,8 +13,6 @@ footer{
     font-family: 'Montserrat', sans-serif !important;
     color: white;
     font-size: 2rem;
-    width: 250px;
-    flex: 1 1 0;
     text-align: center;
 }
 
@@ -23,9 +21,12 @@ footer{
     cursor: pointer;
 }
 
+.name{
+    text-align: left;
+}
 
 .section{
-    flex: 2 1 0;
+    margin-right: 5vw;
 }
 
 .section:hover{
@@ -37,7 +38,12 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;
+}
+
+.image-outside{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .image:hover{
@@ -48,6 +54,7 @@ footer{
 .text-image{
     font-size: 1rem;
     margin: 0.5rem;
+    text-align: center;
 }
 
 @media only screen and (max-width: 1300px){
